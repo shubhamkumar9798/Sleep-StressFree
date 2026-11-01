@@ -1,0 +1,26 @@
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+Features & Model & BA [95\% CI] & Macro-F1 & Rec.$_\mathrm{relax}$ & Rec.$_\mathrm{stress}$ & AUC \\
+\midrule
+Absolute (A) & Majority & 0.500 [0.500, 0.500] & 0.380 & 1.000 & 0.000 & -- \\
+Absolute (A) & LR & 0.578 [0.538, 0.616] & 0.578 & 0.662 & 0.495 & 0.604 \\
+Absolute (A) & RF & 0.535 [0.502, 0.571] & 0.536 & 0.668 & 0.403 & 0.558 \\
+Absolute (A) & SVM & 0.573 [0.538, 0.607] & 0.573 & 0.733 & 0.412 & 0.588 \\
+\midrule
+Relative only (R) & Majority & 0.500 [0.500, 0.500] & 0.380 & 1.000 & 0.000 & -- \\
+Relative only (R) & LR & 0.603 [0.563, 0.642] & 0.603 & 0.700 & 0.505 & 0.605 \\
+Relative only (R) & RF & 0.574 [0.538, 0.612] & 0.575 & 0.680 & 0.469 & 0.603 \\
+Relative only (R) & SVM & 0.613 [0.572, 0.654] & 0.615 & 0.779 & 0.448 & 0.605 \\
+\midrule
+Absolute + relative (A+R) & Majority & 0.500 [0.500, 0.500] & 0.380 & 1.000 & 0.000 & -- \\
+Absolute + relative (A+R) & LR & 0.602 [0.560, 0.642] & 0.602 & 0.682 & 0.522 & 0.608 \\
+Absolute + relative (A+R) & RF & 0.566 [0.526, 0.605] & 0.566 & 0.680 & 0.452 & 0.579 \\
+Absolute + relative (A+R) & SVM & 0.610 [0.566, 0.653] & 0.612 & 0.776 & 0.444 & 0.599 \\
+\midrule
+Transductive z-score & LR & 0.628 [0.579, 0.675] & 0.626 & 0.677 & 0.580 & 0.650 \\
+Transductive z-score & RF & 0.611 [0.570, 0.651] & 0.611 & 0.701 & 0.520 & 0.635 \\
+\midrule
+Time only & LR & 0.953 [0.930, 0.975] & 0.949 & 0.948 & 0.958 & 0.986 \\
+Time only & RF & 0.965 [0.943, 0.985] & 0.965 & 0.976 & 0.953 & 0.990 \\
+\bottomrule
+\end{tabular}

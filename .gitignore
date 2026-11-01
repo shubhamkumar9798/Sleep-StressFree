@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+backend/.venv/
+.pytest_cache/
+
+# Local runtime data (records, uploads, trained models) - never commit participant data
+backend/data/
+backend/artifacts/
+backend/.env
+
+# Public dataset: download it from PhysioNet instead of committing it
+qol_stress-a-multimodal-dataset-of-physiological-and-self-reported-stress-responses-1.0.0/
+data/qol_stress/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/tsconfig.tsbuildinfo
+frontend/next-env.d.ts
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
